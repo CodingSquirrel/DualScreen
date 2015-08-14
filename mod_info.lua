@@ -1,10 +1,10 @@
 name = "DualScreen"
-version = 4
+version = 5
 copyright = ""
 description = "Moves UI elements to one screen when using split screen. Used with the game windowed and stretched across two screens."
 author = "CodingSquirrel"
 url = ""
-uid = "e8b4bc13-7c0d-4560-8c38-431d3314e9d9"
+uid = "2bc59538-fc2c-4a18-964b-85322e9562a2"
 exclusive = false
 ui_only =true
 conflicts = {  }
