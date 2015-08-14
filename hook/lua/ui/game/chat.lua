@@ -1,4 +1,5 @@
 local runCommand = import('/mods/DualScreen/modules/commands.lua').runCommand
+local controls = import('/lua/ui/game/borders.lua').controls
 
 local oldCreateChatEdit = import('/lua/ui/game/chat.lua').CreateChatEdit
 local oldOnEnterPressed
@@ -25,4 +26,10 @@ function CreateChatEdit()
 	end
 
 	return group
+end
+
+local oldCreateConfigWindow = CreateConfigWindow
+function CreateConfigWindow()
+    oldCreateConfigWindow()
+    LayoutHelpers.AtHorizontalCenterIn(GUI.config, controls.mapGroup)
 end
